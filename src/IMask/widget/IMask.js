@@ -190,6 +190,7 @@ export default defineWidget('IMask', template, {
         this.domNode.classList.add("has-error");
         this.errorNode.innerText = msg;
         this.errorNode.classList.remove("hidden");
+        this.mxform.markInvalid();
     },
 
     _hideError() {
